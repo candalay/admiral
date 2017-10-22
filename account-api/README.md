@@ -6,7 +6,7 @@ Used technologies for implementation
 
 Java 8,
 Spring Boot,
-Spring Data
+Spring Data,
 H2 in memory database
 
 ## Build
