@@ -67,7 +67,7 @@ public class TransferEngine {
 	@Transactional
 	public TransferEngine completeTransfer(TransferEngine transferEngine) {
 		
-	;
+
 		Transfer transfer = transferEngine.getTransfer();
 		transfer.setTransactionId(transferEngine.getId());
 		transferRepository.save(transfer);
