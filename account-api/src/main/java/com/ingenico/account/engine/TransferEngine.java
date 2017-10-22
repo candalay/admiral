@@ -40,12 +40,6 @@ public class TransferEngine {
 	@Transactional
 	public TransferEngine checkTransferRequest(UUID uuid, Transfer transfer) {
 	
-		try {
-			Thread.sleep(5000L);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 		Account receiver = accountRepository.findAccountByAccountNumber(transfer.getReceiverAccountNumber());		
 		Account sender = accountRepository.findAccountByAccountNumber(transfer.getSenderAccountNumber());
 		
@@ -104,10 +98,4 @@ public class TransferEngine {
 	public void setId(UUID id) {
 		this.id = id;
 	}
-
-
-	//transfersend
-	
-	//getTransfer
-
 }
