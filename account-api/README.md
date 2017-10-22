@@ -5,9 +5,8 @@ API service to create account and transfer money
 Used technologies for implementation        
 
 Java 8,
-Spring MVC,
-Spring Data,
-Spring Core,
+Spring Boot,
+Spring Data
 H2 in memory database
 
 ## Build
