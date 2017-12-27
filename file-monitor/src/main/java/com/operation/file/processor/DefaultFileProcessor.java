@@ -56,11 +56,9 @@ public class DefaultFileProcessor implements Runnable, FileProcessor {
 				long len = file.length();
 
 				if (len < filePointer) {
-					// Log must have been jibbled or deleted.
 					this.session.sendMessage(new TextMessage("File was reset, starting to monitoring again"));
 					filePointer = len;
 				} else if (len > filePointer) {
-					// File must have had something added to it!
 					RandomAccessFile raf = new RandomAccessFile(file, "r");
 					raf.seek(filePointer);
 					String line = null;
