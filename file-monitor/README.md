@@ -2,18 +2,18 @@
 
 This application monitors a configured text file and displays the counts of the INFO, ERROR, WARNING parameters periodically on gui
 
-Format: datetime severity some message
+    Format: datetime severity some message
 
-Example:
-2016-09-20 16:23:10,994 INFO Some info message
+    Example:
+    2016-09-20 16:23:10,994 INFO Some info message
 
-2016-09-20 16:23:11,994 INFO Some other info message
+    2016-09-20 16:23:11,994 INFO Some other info message
 
-2016-09-20 16:23:12,994 WARNING Some warning message
+    2016-09-20 16:23:12,994 WARNING Some warning message
 
-2016-09-20 16:23:13,994 WARNING Some other warning message
+    2016-09-20 16:23:13,994 WARNING Some other warning message
 
-2016-09-20 16:23:14,994 ERROR Some error message
+    2016-09-20 16:23:14,994 ERROR Some error message
 
 
 Implementation        
