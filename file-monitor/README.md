@@ -2,10 +2,10 @@
 
 This application monitors a configured text file and displays the counts of the INFO, ERROR, WARNING parameters periodically on gui
 
-Format: <datetime> <severity> <some message>
+Format: datetime severity some message
 
 Example:
-016-09-20 16:23:10,994 INFO Some info message
+2016-09-20 16:23:10,994 INFO Some info message
 
 2016-09-20 16:23:11,994 INFO Some other info message
 
@@ -18,9 +18,10 @@ Example:
 
 Implementation        
 
-Java 8,
-Spring Core,
-Spring Websocket
+    Java 8, 
+    Spring Core,
+    Spring Websocket,
+    Spring Boot
 
 ## Configuration
 
