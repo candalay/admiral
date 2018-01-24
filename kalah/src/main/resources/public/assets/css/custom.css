@@ -1,0 +1,66 @@
+.center1{
+position: absolute;
+top: 50%;
+left: 50%;
+margin-top: -50px;
+margin-left: -50px;
+width: 100px;
+height: 100px;
+}​
+
+body {
+    background-color: #ccc;
+}
+.gameBoard {
+    width: 850px;
+    height: 600px;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+.board {
+    height: 100%;
+    margin-top: 0%;
+    margin-left: 10%;
+}
+
+.pit {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 50px;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    background: #01c7fd;
+}
+.player-area {
+    list-style: none;
+}
+.player-area li {
+    float: left;
+    margin: 0 2px;
+}
+.southPit {
+    padding-top: 5px;
+    clear: both;
+}
+.northPit {
+    padding-top: 5px;
+    clear: both;
+    padding-left: 78px;
+}
+.pit-area {
+    float: left;
+    width: 100px;
+    height:100px;
+    font-size: 40px;
+}
+.message{
+    padding-top: 10px;
+    margin-top: 0px;
+}

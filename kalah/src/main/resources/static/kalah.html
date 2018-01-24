@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="kalahApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="/assets/css/custom.css" >
+    <link rel="import" href="root.html">
+</head>
+
+
+<div ng-controller="kalahController" class="center">
+
+    <div style="height:50px;"></div>
+
+    <div class="row">
+
+        <section id="game" class="gameBoard" ng-cloak>
+
+            <div class="message">
+                <h3>{{msg}} </h3>
+                <p>Play Game!</p>
+            </div>
+
+            <div>
+                <h2>Player South - 2</h2>
+            </div>
+            <section class="board">
+
+                <section class="southPit">
+                    <ul id="playerSouth" class="player-area">
+                        <li><div class="pit pit-area">{{board[0]}}</div></li>
+                        <li><div class="pit" ng-click='move(13)'>{{board[13]}}</div>
+                        <li><div class="pit" ng-click='move(12)'>{{board[12]}}</div>
+                        <li><div class="pit" ng-click='move(11)'>{{board[11]}}</div>
+                        <li><div class="pit" ng-click='move(10)'>{{board[10]}}</div>
+                        <li><div class="pit" ng-click='move(9)'>{{board[9]}}</div>
+                        <li><div class="pit" ng-click='move(8)'>{{board[8]}}</div>
+                    </ul>
+                </section>
+
+                <section class="northPit">
+                    <ul id="playerNorth" class="player-area">
+                        <li><div class="pit" ng-click="move(1)">{{board[1]}}</div>
+                        <li><div class="pit" ng-click='move(2)'>{{board[2]}}</div>
+                        <li><div class="pit" ng-click='move(3)'>{{board[3]}}</div>
+                        <li><div class="pit" ng-click='move(4)'>{{board[4]}}</div>
+                        <li><div class="pit" ng-click='move(5)'>{{board[5]}}</div>
+                        <li><div class="pit" ng-click='move(6)'>{{board[6]}}</div>
+                        <li><div class="pit pit-area" style="margin-top: -65px;">{{board[7]}}</div>
+                    </ul>
+                </section>
+
+                <div style="clear: both;">
+                    <h2>Player North - 1</h2>
+                </div>
+
+            </section>
+
+        </section>
+
+
+    </div>
+
+</div>
